@@ -1,0 +1,39 @@
+:root {
+  --primary: #e63946;       /* Vibrant red */
+  --secondary: #457b9d;     /* Deep blue */
+  --accent: #a8dadc;        /* Soft teal */
+  --light: #f1faee;         /* Off-white */
+  --dark: #1d3557;          /* Navy blue */
+  --text: #2b2d42;          /* Dark gray */
+  --highlight: #ffbe0b;     /* Golden yellow */
+}
+
+body {
+  background-color: var(--light);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+}
+.btn {
+  
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--dark);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
